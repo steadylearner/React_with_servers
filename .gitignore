@@ -1,0 +1,32 @@
+# Dependencies and results
+node_modules/
+
+# .env for api keys and configuration variables
+.env
+set_env.sh
+
+# Files with Cypress credentials
+cypress.json
+cypress.video.json
+cypress/
+record-video.bash
+
+# AWS
+ecs-params.yml
+
+# Heavy Python and its venv files and from dependencies.
+__pycache__
+python/
+admin/
+
+# .swp files from vim
+*.swp
+
+# db files
+*.db
+
+# static and public in server/
+
+server/*/static/
+server/*/public/
+*/react/static/

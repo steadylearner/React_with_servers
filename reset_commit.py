@@ -1,0 +1,9 @@
+import subprocess as cmd
+
+target = "git@github.com:steadylearner/React_with_servers.git"
+
+cmd.run("rm -rf .git && git init && git add .", check=True, shell=True)
+message = "Reset commits"
+cmd.run(f"git commit -m '{message}'", check=True, shell=True)
+cmd.run(f"git remote add origin {target}", check=True, shell=True)
+cmd.run("git push -u origin master -f", check=True, shell=True)
